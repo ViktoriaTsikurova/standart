@@ -1,0 +1,128 @@
+{
+  "id": "134d628d-0e92-4eab-a2ac-75575dae2add",
+  "version": "2.0",
+  "name": "1",
+  "url": "https://rsue.ru/",
+  "tests": [{
+    "id": "7ca1f5f6-020c-4f35-8a15-e86eaf95b4f6",
+    "name": "Untitled",
+    "commands": [{
+      "id": "ddf95bc6-57dc-4f8e-a2f9-f72ea825dcc9",
+      "comment": "",
+      "command": "open",
+      "target": "https://rsue.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ec0141e-79e4-45b2-a5cf-520cd3b607fd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Личный кабинет",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "024c48e7-fafa-427c-8f9a-05b7b100c07f",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_LOGIN",
+      "targets": [],
+      "value": "tcikurovavm"
+    }, {
+      "id": "f90d6f52-38b8-4c0c-be2e-e2d5bf2dd46f",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_PASSWORD",
+      "targets": [],
+      "value": "qdfwyu9xi8ag"
+    }, {
+      "id": "9fdff5e9-44c2-480d-884e-babbb848985a",
+      "comment": "",
+      "command": "click",
+      "target": "name=Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "036a260a-bf7c-4a41-a5a4-257606a5dfe8",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout_butt",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d0c5e079-63a6-4b32-829c-7e1f168afaaf",
+    "name": "2",
+    "commands": [{
+      "id": "cdb44705-2e23-4a49-9e6d-2cba26ff46a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://rsue.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a5dc3cb-3db3-450d-bd96-14f0f5758027",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Личный кабинет",
+      "targets": [
+        ["linkText=Личный кабинет", "linkText"],
+        ["css=.cart > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Личный кабинет')]", "xpath:link"],
+        ["xpath=//div[@id='lcab']/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/avtorizatsiya.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Личный кабинет')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad6c4b4c-d883-4464-af8f-a8d2e79feccb",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_LOGIN",
+      "targets": [
+        ["name=USER_LOGIN", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='USER_LOGIN']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[4]/form/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "tcikurovavm"
+    }, {
+      "id": "1aebe006-ae49-4892-add3-3d9f57af845c",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_PASSWORD",
+      "targets": [
+        ["name=USER_PASSWORD", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='USER_PASSWORD']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[4]/form/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "qdfwyu9xi8ag"
+    }, {
+      "id": "48782f08-8041-4e56-a191-978d4bc3ff78",
+      "comment": "",
+      "command": "click",
+      "target": "name=Login",
+      "targets": [
+        ["name=Login", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[4]/form/table/tbody/tr[4]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0739dd5e-0288-492b-ab7e-aa5340e8d824",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7ca1f5f6-020c-4f35-8a15-e86eaf95b4f6"]
+  }],
+  "urls": ["https://rsue.ru/"],
+  "plugins": []
+}
